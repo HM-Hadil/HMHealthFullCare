@@ -7,6 +7,7 @@ import { HomePageComponent } from './Home/home-page/home-page.component';
 import { HeaderComponent } from './Home/header/header.component';
 import { FooterComponent } from './Home/footer/footer.component';
 import { AboutComponent } from './Home/about/about.component';
+import { ConsulterPoidsComponent } from './services/consulter-poids/consulter-poids.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AboutComponent } from './Home/about/about.component';
     HomePageComponent,
     HeaderComponent,
     FooterComponent,
-    AboutComponent
+    AboutComponent,
+    ConsulterPoidsComponent
   ],
   imports: [
     BrowserModule,
