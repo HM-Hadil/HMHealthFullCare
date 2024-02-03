@@ -1,94 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-
-
-<section class="banner">
-  <!--
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="banner">
+      <!--
   <div class="image">
     <img src="assets/image/—Pngtree—avocado_2100607.png" class="rounded" alt="...">
 
   </div>-->
-  <div class="design1"></div>
-  <div class="design2"></div>
-  <div class="design3"></div>
-</section>
-<div class="banner-text">
-  <h1>Un accompagnement pour votre nutrition et votre bien-être</h1>
-  <p>
-    Recevez un plan personnalisé dès maintenant et entamez <br />
-    votre chemin vers une vie plus saine et épanouissante.
-  </p>
-</div>
+      <div class="design1"></div>
+      <div class="design2"></div>
+      <div class="design3"></div>
+    </section>
+    <div class="banner-text">
+      <h1>Un accompagnement pour votre nutrition et votre bien-être</h1>
+      <p>
+        Recevez un plan personnalisé dès maintenant et entamez <br />
+        votre chemin vers une vie plus saine et épanouissante.
+      </p>
+    </div>
 
-<div class="content2">
-  <h2>
-    Une application innovante qui simplifie l'amélioration de votre alimentation
-    en vous permettant de communiquer avec des specialistes et prendre un
-    rendez-vous
-  </h2>
-  <div class="row1">
-    <div class="card1" style="width: 18rem">
-      <img src="assets/image/consulter.jpg" alt="..." class="imag" />
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <button class="btn1" [routerLink]="['/consulterPoids']">
-          Consulter Poids
-        </button>
+    <div class="content2">
+      <h2>
+        Une application innovante qui simplifie l'amélioration de votre
+        alimentation en vous permettant de communiquer avec des specialistes et
+        prendre un rendez-vous
+      </h2>
+      <div class="row1">
+        <div class="card1" style="width: 18rem">
+          <img src="assets/image/consulter.jpg" alt="..." class="imag" />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <button class="btn1" [routerLink]="['/consulterPoids']">
+              Consulter Poids
+            </button>
+          </div>
+        </div>
+
+        <div class="card1" style="width: 18rem">
+          <img src="assets/image/rendezvous.webp" alt="..." class="imag" />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <button class="btn1">Rendez-vous</button>
+          </div>
+        </div>
+
+        <div class="card1" style="width: 18rem">
+          <img src="assets/image/chat.jpg" alt="..." class="imag" />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <button class="btn1">Communiquer</button>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="card1" style="width: 18rem">
-      <img src="assets/image/rendezvous.webp" alt="..." class="imag" />
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <button class="btn1">Rendez-vous</button>
+    <div class="content3">
+      <h1>
+        Ensemble de menus, plus que 100 recettes, suggestions et listes de
+        courses illimitées
+      </h1>
+      <div class="content3-text" style="width: 50%; margin: auto">
+        <p>- Utilisez nos menus et calculez vos portions personnalisées</p>
+        <p>- Choisissez parmi plus de 100 recettes</p>
+        <p>
+          - Utilisez notre générateur de repas pour composer un menu en quelques
+          clics
+        </p>
+        <p>
+          - Créez les listes de liste de courses de vos menus et transférez-les
+          à qui vous souhaitez
+        </p>
+      </div>
+      <div class="row images">
+        <img src="assets/image/menu.png" style="width: 10rem; height: 10rem" />
       </div>
     </div>
-
-    <div class="card1" style="width: 18rem">
-      <img src="assets/image/chat.jpg" alt="..." class="imag" />
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <button class="btn1">Communiquer</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="content3">
-  <h1>
-    Ensemble de menus, plus que 100 recettes, suggestions et listes de courses
-    illimitées
-  </h1>
-  <div class="content3-text" style="width: 50%; margin: auto">
-    <p>- Utilisez nos menus et calculez vos portions personnalisées</p>
-    <p>- Choisissez parmi plus de 100 recettes</p>
-    <p>
-      - Utilisez notre générateur de repas pour composer un menu en quelques
-      clics
-    </p>
-    <p>
-      - Créez les listes de liste de courses de vos menus et transférez-les à
-      qui vous souhaitez
-    </p>
-  </div>
-  <div class="row images">
-    <img src="assets/image/menu.png" style="width: 10rem; height: 10rem" />
-  </div>
-</div>
-
+    <!--
 <script>
   window.addEventListener("scroll", function() {
     var header = document.querySelector("header");
     header.classList.toggle("Sticky", window.scrollY > 0);
   });
+</script>-->
+<script>
+  $(document).ready(function(){
+    $(window).scroll(function(){
+      if(this.scrollY > 20){
+        $('header').addClass("Sticky");
+
+      }
+      else{
+        $('header').removeClass("Sticky");
+      }
+    })
+  })
 </script>
 
-</body>
+  </body>
 </html>

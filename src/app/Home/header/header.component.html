@@ -1,6 +1,8 @@
-
-<header>
-  <label for="logo" class="logo"><span>HM</span>Helath<span style="color: orangered;">Care</span></label>
+<div class="top-header"><span></span></div>
+<header [ngClass]="{ sticky: isSticky }">
+  <label for="logo" class="logo"
+    ><span>HM</span>Helath<span style="color: orangered">Care</span></label
+  >
 
   <ul>
     <li>Home</li>
@@ -11,16 +13,22 @@
     <li>Health Education</li>
     <li>Sign in</li>
     <li>Sign up</li>
-
   </ul>
-
 </header>
 
-
+<!--
 <script>
-  window.addEventListener("scroll", function() {
-    var header = document.querySelector("header");
-    header.classList.toggle("Sticky", window.scrollY > 0);
-  });
-</script>
 
+  $(document).ready(function(){
+    $(window).scroll(function(){
+      if(this.scrollY > 20){
+        $('header').addClass("Sticky");
+
+      }
+      else{
+        $('header').removeClass("Sticky");
+      }
+    })
+  })
+</script>
+-->
