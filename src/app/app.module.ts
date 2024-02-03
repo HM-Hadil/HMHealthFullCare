@@ -8,6 +8,7 @@ import { HeaderComponent } from './Home/header/header.component';
 import { FooterComponent } from './Home/footer/footer.component';
 import { AboutComponent } from './Home/about/about.component';
 import { ConsulterPoidsComponent } from './services/consulter-poids/consulter-poids.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ConsulterPoidsComponent } from './services/consulter-poids/consulter-po
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

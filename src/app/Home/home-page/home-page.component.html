@@ -59,7 +59,27 @@
       </div>
     </div>
 
-   
+    <div class="row my-5">
+      <div class="col-md-8 offset-md-2">
+        <div>
+          <button class="btn btn-warning" (click)="showCard = !showCard">show details</button>
+        </div>
+        <hr />
+      </div>
+
+      <div class="card col-md-8 offset-md-2"[@cardTrigger]="showCard ? 'active' : 'inactive'" *ngIf="showCard">
+        <div class="card-header">this is card header</div>
+        <div class="card-body">
+          some details here to the body of card,rd
+          some details here to the body of card
+          some details here to the body of card
+        </div>
+        <div class="card-footer">
+          this is the footer of the card
+        </div>
+      </div>
+    </div>
+
     <!--
 <script>
   window.addEventListener("scroll", function() {
