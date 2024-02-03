@@ -1,12 +1,42 @@
-.content{
 
+.banner{
+  position: relative;
   width: 100%;
-  height: 40rem;
-  background-color: #ffee9e;
-  border-bottom-left-radius:0% ;
-  border-bottom-right-radius:90% ;
-}
+  height: 100vh;
+  background-image:  url('https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/home-improvement/wp-content/uploads/2022/07/featured-image-kitchen-layouts.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(2px);
+  -webkit-filter: blur(4px);
 
+ // background-blend-mode: lighten;
+
+}
+.banner-text{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  color:#f8f8ff;
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  z-index: 2;
+}
+.banner-text h1{
+  font-family: 'Playfire Display', serif;
+  font-size: 40px;
+  font-weight: 829;
+  font-style: italic;
+  letter-spacing: 1px;
+
+}
+.banner-text p{
+  font-family: 'Beau Rivage' ,cursive;
+  font-size: 28px;
+  font-weight: 100;
+  line-height: 30px;
+  margin: 20px auto;
+}
 .image{
   width: 18rem;
   height: 18rem;
@@ -19,27 +49,8 @@
   width: 100%;
   height: 100%;
 }
-.banner{
-  width: 26rem;
-  height: 10rem;
-  position: absolute;
-  left: 8rem;
-  top: 10rem;
 
 
-}
-.banner p{
-  font-size: 44px;
-  font-weight: 540;
-
-}
-
-.banner span{
-  color:#454849;
-  font-size: 25px;
-  text-align: justify;
-
-}
 .design1{
   width: 4rem;
   height: 4rem;
@@ -74,22 +85,29 @@
   margin-top: -2rem ;
   width: 100%;
   height: 40rem;
-  background: linear-gradient(#ffee9e, white);
   border-top-right-radius:20% ;
   padding-top: 6rem;
   padding-left: 2rem;
   text-align-last: center;
   line-height: 2px;
 }
+.content2 h2{
+  font-family: 'Playfire Display', serif;
+  font-size: 30px;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 1px;
+
+}
 .imag{
   border-top-right-radius: 5%;
   border-top-left-radius: 5%;
-  height: 16rem;
-  width: 23rem;
+  height: 14rem;
+  width: 18rem;
 }
 
 .card1{
-  height: 24rem;
+  height: 22rem;
   margin-top: 2rem;
   box-shadow: 8px 5px 3px grey;
   border-top-right-radius: 5%;
@@ -101,7 +119,7 @@
 .btn1{
   width: 10rem;
   height: 3rem;
-  background: linear-gradient(white, #ffee9e,white);
+  background-color: #f5bf03;
   border-radius: 10px;
   font-size: 20px;
   border: 1px solid #f8d54f;
@@ -130,33 +148,35 @@
 }
 
 .content3{
-  width: 100%;
-  height: 40rem;
-  margin-top: 4rem;
+  width: 90%;
+  height: 100vh;
+  margin: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  height:100vh;
   background: linear-gradient(white, #ACD9D3,white);
-  padding-top: 4rem;
+
 }
 h1{
   text-align: center;
+  font-family: 'Playfire Display', serif;
+  font-size: 30px;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 1px;
 }
 .content3 p{
   font-size: 26px;
   margin-top: 0.5rem;
-
 
 }
 .images {
 margin-left: 10rem;
 margin-top: 5rem;
 }
-.content3{
-  width: 100%;
-  height: 38rem;
-  margin-top: 4rem;
-  background: linear-gradient(white, #ACD9D3,white);
-  background-size: cover;
-  position: relative;
-}
+
 .content3-text {
   position: absolute;
   top: 50%; /* Adjust the top position as needed */
@@ -168,3 +188,10 @@ margin-top: 5rem;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 
 }
+  //style sticky navbar
+
+  .Sticky {
+    padding: 12px;
+    background-color: transparent;
+    /* Add other styles for the sticky header if needed */
+  }

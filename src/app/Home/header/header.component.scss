@@ -1,33 +1,64 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+$primary-color:#f8d54f;
 header{
   width: 100%;
   height: 5rem;
-  background-color:#ffee9e ;
-  font-size: 20px;
-  font-weight: 440;
-
-
-
+  background-color:#f5bf03 ;
+  font-size: 18px;
+  font-weight: 300;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 20px 100px;
+  z-index: 100000;
+}
+header .logo{
+  font-family: 'Times New Roman', Times, serif;
+  position: relative;
+  font-weight: 700;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+span{
+  color: green;
 }
 header ul{
+  position: relative;
   display: flex;
   justify-content: center;
-  padding-top: 0.5rem;
+  align-items: center;
+
 
 
 
 }
 header ul li{
   list-style: none;
-  padding:1rem;
+  position: relative;
+  margin: 0 15px ;
+  font-size: 28;
 
 }
 header ul li:hover{
   cursor: pointer;
-  border: 1px solid #f8d54f;
+  border: 1px solid $primary-color;
   border-radius: 100% 50% 100% 50%;
-  background-color: #f8d54f;
+  background-color: $primary-color;
   color: white;
-
 
 }
 
+.Sticky {
+  padding: 12px;
+  background-color: transparent;
+  /* Add other styles for the sticky header if needed */
+}
