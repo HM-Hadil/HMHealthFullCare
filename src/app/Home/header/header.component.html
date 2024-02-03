@@ -4,7 +4,7 @@
     ><span>HM</span>Helath<span style="color: orangered">Care</span></label
   >
 
-  <ul>
+  <ul class="menu" [ngClass]="{ active: isMenuOpen }">
     <li>Home</li>
     <li>About</li>
     <li>Contact</li>
@@ -14,6 +14,13 @@
     <li>Sign in</li>
     <li>Sign up</li>
   </ul>
+  <div
+    class="menu-btn"
+    (click)="toggleMenu()"
+    [ngClass]="{ active: isMenuOpen }"
+  >
+    ≡
+  </div>
 </header>
 
 <!--
