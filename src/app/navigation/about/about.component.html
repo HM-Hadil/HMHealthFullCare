@@ -1,14 +1,29 @@
 <div class="about">
-  <img [src]="imgUrl" [@photoState]="position" class="photo" alt="" width="500px" />
+  <div class="row">
+    <img
+      [src]="imgUrl"
+      [@photoState]="position"
+      class="photo"
+      alt=""
+      width="500px"
+    />
 
-<div class="row">
-  <button (click)="changePosition('move')" class="btn btn-warning">
-    Translate
-  </button>
-  <button (click)="changePosition('spin')" class="btn btn-warning">Spin</button>
-  <button (click)="changePosition('null')" class="btn btn-warning">
-    Reset
-
-  </button>
-</div>
+    <div class="card" >
+      <p>test translate para
+        enfbzjebfkjzenkjfn
+        njfbzejhbfkz
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <button (click)="changePosition('move')" class="btn btn-warning">
+      Translate
+    </button>
+    <button (click)="changePosition('spin')" class="btn btn-warning">
+      Spin
+    </button>
+    <button (click)="changePosition('null')" class="btn btn-warning">
+      Reset
+    </button>
+  </div>
 </div>

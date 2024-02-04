@@ -8,6 +8,7 @@ import { HeaderComponent } from './Home/header/header.component';
 import { FooterComponent } from './Home/footer/footer.component';
 import { ConsulterPoidsComponent } from './services/consulter-poids/consulter-poids.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ServicesComponent } from './navigation/services/services.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HeaderComponent,
     FooterComponent,
 
-    ConsulterPoidsComponent
+    ConsulterPoidsComponent,
+      ServicesComponent
   ],
   imports: [
     BrowserModule,

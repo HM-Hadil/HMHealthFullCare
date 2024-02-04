@@ -16,7 +16,7 @@ import { Component, OnInit } from '@angular/core';
       state(
         'move',
         style({
-          transform: 'translateX(-80%) translateY(50px)',
+          transform: 'translateX(-50%) translateY(50px)',
         })
       ),
 
@@ -32,10 +32,15 @@ import { Component, OnInit } from '@angular/core';
           transform: 'rotateT(180deg) rotateZ(90deg)',
         })
       ),
+
+
+
       transition('spin => move', animate('2000ms ease-out')),
       transition('* => *', animate('500ms ease')),
     ]),
+
   ],
+
 })
 export class AboutComponent implements OnInit {
   imgUrl =
